@@ -1,0 +1,10 @@
+/Users/dalton/Documents/Coding/PortfolioPieces/UserDashboard/bin/Debug/netcoreapp2.0/UserDashboard.deps.json
+/Users/dalton/Documents/Coding/PortfolioPieces/UserDashboard/bin/Debug/netcoreapp2.0/UserDashboard.runtimeconfig.json
+/Users/dalton/Documents/Coding/PortfolioPieces/UserDashboard/bin/Debug/netcoreapp2.0/UserDashboard.runtimeconfig.dev.json
+/Users/dalton/Documents/Coding/PortfolioPieces/UserDashboard/bin/Debug/netcoreapp2.0/UserDashboard.dll
+/Users/dalton/Documents/Coding/PortfolioPieces/UserDashboard/bin/Debug/netcoreapp2.0/UserDashboard.pdb
+/Users/dalton/Documents/Coding/PortfolioPieces/UserDashboard/obj/Debug/netcoreapp2.0/UserDashboard.csproj.CoreCompileInputs.cache
+/Users/dalton/Documents/Coding/PortfolioPieces/UserDashboard/obj/Debug/netcoreapp2.0/UserDashboard.AssemblyInfoInputs.cache
+/Users/dalton/Documents/Coding/PortfolioPieces/UserDashboard/obj/Debug/netcoreapp2.0/UserDashboard.AssemblyInfo.cs
+/Users/dalton/Documents/Coding/PortfolioPieces/UserDashboard/obj/Debug/netcoreapp2.0/UserDashboard.dll
+/Users/dalton/Documents/Coding/PortfolioPieces/UserDashboard/obj/Debug/netcoreapp2.0/UserDashboard.pdb
