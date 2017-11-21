@@ -14,6 +14,11 @@ namespace UserDashboard
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            // var builder = new ConfigurationBuilder()
+            // .SetBasePath(env.ContentRootPath)
+            // .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            // .AddEnvironmentVariables();
+            // Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -22,6 +27,9 @@ namespace UserDashboard
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSession();
+            services.AddScoped<DbConnector>();
+            services.Configure<MySqlOptions>(Configuration.GetSection("DBInfo"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "f0cb906c388b6bde10f0d81d3a014de312b05f77"
+    "signature": "775929633df35dfef8a8c65468041703de16dc13"
   },
   "compilationOptions": {
     "defines": [
@@ -23,15 +23,47 @@
     ".NETCoreApp,Version=v2.0": {
       "UserDashboard/1.0.0": {
         "dependencies": {
+          "Dapper": "1.50.2",
           "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
-          "MySql.Data": "7.0.7-m61"
+          "MySql.Data": "7.0.7-m61",
+          "MySql.Data.EntityFrameworkCore": "7.0.7-m61",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.0"
         },
         "runtime": {
           "UserDashboard.dll": {}
         },
         "compile": {
           "UserDashboard.dll": {}
+        }
+      },
+      "Dapper/1.50.2": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Data.SqlClient": "4.4.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.XDocument": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Dapper.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Dapper.dll": {}
         }
       },
       "Google.Protobuf/3.0.0": {
@@ -1601,7 +1633,7 @@
           "Microsoft.Extensions.Caching.Memory": "2.0.0",
           "Microsoft.Extensions.DependencyInjection": "2.0.0",
           "Microsoft.Extensions.Logging": "2.0.0",
-          "Remotion.Linq": "2.1.1",
+          "Remotion.Linq": "2.2.0-alpha-001",
           "System.Collections.Immutable": "1.4.0",
           "System.ComponentModel.Annotations": "4.4.0",
           "System.Diagnostics.DiagnosticSource": "4.4.1",
@@ -2379,6 +2411,26 @@
           "lib/netstandard1.6/MySql.Data.dll": {}
         }
       },
+      "MySql.Data.EntityFrameworkCore/7.0.7-m61": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
+          "Microsoft.Extensions.Caching.Memory": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.Logging": "2.0.0",
+          "MySql.Data": "7.0.7-m61",
+          "NETStandard.Library": "2.0.0",
+          "Remotion.Linq": "2.2.0-alpha-001",
+          "System.Collections.Immutable": "1.4.0",
+          "System.Interactive.Async": "3.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.6/MySql.Data.EntityFrameworkCore.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/MySql.Data.EntityFrameworkCore.dll": {}
+        }
+      },
       "Newtonsoft.Json/10.0.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.4.0",
@@ -2427,7 +2479,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Remotion.Linq/2.1.1": {
+      "Remotion.Linq/2.2.0-alpha-001": {
         "dependencies": {
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
@@ -4215,6 +4267,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Dapper/1.50.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-31Ju5VGyNNc66OAsw+SCp1TWPBuyw8ZBdkMG5pSUPChZcy27s2GhVz5B9INP4f25mPqfiJ+mfeHy9JAJyyT+LQ==",
+      "path": "dapper/1.50.2",
+      "hashPath": "dapper.1.50.2.nupkg.sha512"
+    },
     "Google.Protobuf/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -5363,6 +5422,13 @@
       "path": "mysql.data/7.0.7-m61",
       "hashPath": "mysql.data.7.0.7-m61.nupkg.sha512"
     },
+    "MySql.Data.EntityFrameworkCore/7.0.7-m61": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pWznDa58vHSsC3IIQaW6MvjC4bVJoZiKh44y6IwHhUfqrc476RCjgz7+Be2fNouWVG9hSbjm/9o9W/glMyKdbw==",
+      "path": "mysql.data.entityframeworkcore/7.0.7-m61",
+      "hashPath": "mysql.data.entityframeworkcore.7.0.7-m61.nupkg.sha512"
+    },
     "Newtonsoft.Json/10.0.1": {
       "type": "package",
       "serviceable": true,
@@ -5377,12 +5443,12 @@
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
     },
-    "Remotion.Linq/2.1.1": {
+    "Remotion.Linq/2.2.0-alpha-001": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5132Gle3KMZsdjcpepLzEhtEMORFGDGXTfKq8YZaBmh+m545W2+n7GIb8tVsNBvon8Oy57VIXyms8pt3HFg1hQ==",
-      "path": "remotion.linq/2.1.1",
-      "hashPath": "remotion.linq.2.1.1.nupkg.sha512"
+      "sha512": "sha512-6pyY0UF9CBLvOxOkL++nfq1w0adXn6cr3dUSxOYvTNaJ3P5MHh+lQFpqeKA8mJW5eLEso1kXCZ7dKKfPMXTVxQ==",
+      "path": "remotion.linq/2.2.0-alpha-001",
+      "hashPath": "remotion.linq.2.2.0-alpha-001.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
